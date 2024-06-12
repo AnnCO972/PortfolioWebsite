@@ -14,8 +14,6 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #0D1B2A;
@@ -50,6 +48,11 @@ body {
   width: 100%;
 }
 
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
 #hero-section {
   display: flex;
   justify-content: center;
@@ -71,4 +74,82 @@ body {
 #hero-section #name-section .contact-link a {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#about-section .about-inner {
+  display: flex;
+  flex-basis: 50%;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+}
+#about-section p, #about-section h2, #about-section .picture-me {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#experience-section {
+  display: flex;
+  flex-direction: column;
+}
+#experience-section #job-experience-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 3px #1B263B solid;
+  align-self: center;
+}
+#experience-section #job-experience-container .job-experience-item {
+  display: flex;
+  flex-direction: row;
+}
+#experience-section #job-experience-container .job-experience-item .job-time, #experience-section #job-experience-container .job-experience-item .job-description {
+  opacity: 70%;
+  font-size: 0.8rem;
+}
+#experience-section #job-experience-container .job-experience-item .job-title {
+  display: flex;
+  flex-direction: column;
+}
+#experience-section #job-experience-container .job-experience-item .job-title h4 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+#experience-section #job-experience-container .job-experience-item .job-title h5 {
+  margin: 0;
+  font-style: italic;
+  font-weight: 400;
+}
+#experience-section #job-experience-container .job-experience-item .job-detail {
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+#experience-section #job-experience-container .job-experience-item .job-time {
+  flex-basis: 30%;
+  border-right: 2px #1B263B solid;
+  border-bottom: 3px #1B263B solid;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#experience-section #job-experience-container .job-experience-item .job-description {
+  padding-left: 10px;
+  border-top: 2px #1B263B solid;
+  border-bottom: 3px #1B263B solid;
+}
+#experience-section #resume {
+  align-self: center;
 }
