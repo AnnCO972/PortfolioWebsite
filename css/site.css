@@ -83,23 +83,17 @@ body {
   margin-left: 5px;
   margin-right: 5px;
 }
+#about-section .about-paragraph {
+  text-align: left;
+  align-items: center;
+}
 #about-section .about-inner {
   display: flex;
   flex-basis: 50%;
   flex-grow: 1;
   justify-content: center;
   position: relative;
-}
-#about-section p, #about-section h2, #about-section .picture-me {
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
 }
 
 #experience-section {

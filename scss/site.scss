@@ -86,25 +86,18 @@ body{
     flex-wrap: wrap;
     margin-left: 5px;
     margin-right: 5px;
+    .about-paragraph{
+        text-align: left;
+        align-items: center;
+    }
     .about-inner{
         display: flex;
         flex-basis: 50%;
         flex-grow: 1;
         justify-content: center;
         position: relative;
-    }
-    
-    p,h2,.picture-me{
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: left;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
+        align-items: center;
+    }   
 }
 
 #experience-section{
